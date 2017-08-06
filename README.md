@@ -5,9 +5,9 @@ Extension module of golang logging
 ```go
 import log "gopkg.in/logger.v1"
 
-func main(){
-  log.SetOutputLevel(log.Ldebug)
-  log.Debugf("Debug: foo\n")
+func foo() {
+	log.SetOutputLevel(log.Ldebug)
+	log.Debugf("Debug: foo\n")
 	log.Debug("Debug: foo")
 
 	log.Infof("Info: foo\n")
@@ -33,5 +33,6 @@ func main(){
 	log.Errorf("Error: foo\n")
 	log.Error("Error: foo")
 }
+
 
 ```
